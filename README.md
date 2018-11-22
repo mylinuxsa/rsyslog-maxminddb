@@ -1,3 +1,7 @@
+增加rsyslog 读取ip库，
+补丁已经被官方接受。
+
+
 # rsyslog-maxminddb
 
 日志解析处理中，对 IP 归属地的解析是很常见的需求。在 ELKstack 中就可以通过 logstash-filter-geoip 插件解析 IP，kibana tilemap 做经纬度可视化。不过 GeoIP 库在国内准确率较低，一般认为不足 70%，且 logstash-filter-geoip 插件的效率也不高，在高流量场合达不到性能要求。
